@@ -1,0 +1,67 @@
+/*
+	Author: Agência A2C
+	Author URI: http://www.a2c.com.br
+*/
+
+@import '_reset';
+@import '_icons';
+@import '_sprite';
+
+
+/* DEFAULT --------------------------------------------------------- */
+
+::-webkit-input-placeholder { color: #2c2c2c; }
+::-moz-placeholder { color: #2c2c2c; }
+:-ms-input-placeholder { color: #2c2c2c; }
+input:-moz-placeholder { color: #2c2c2c; }
+.placeholder { color: #2c2c2c; }
+
+.error::-webkit-input-placeholder { color: #f00; }
+.error::-moz-placeholder { color: #f00; }
+.error:-ms-input-placeholder { color: #f00; }
+.error:-moz-placeholder { color: #f00; }
+.error.placeholder { color: #f00; }
+
+html, body { height: 100%; }
+
+body, button,
+input, select, textarea {
+	font: 12px/1 Helvetica, Tahoma, Verdana, Arial;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+/* DEFAULT --------------------------------------------------------- */
+
+
+/* CONTENT --------------------------------------------------------- */
+
+.container {
+  margin: 0 auto;
+  width: 992px;
+}
+
+/* CONTENT --------------------------------------------------------- */
+
+
+/* CLASS HELPER ---------------------------------------------------- */
+
+.hidden { display: none !important; visibility: hidden; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* clear floated elements { */
+.clear { clear: both; }
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+.clearfix:after { display: block; visibility: hidden; clear: both; width: 0; height: 0; font-size: 0; line-height: 0; content: ' '; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* } clear floated elements */
+
+/* CLASS HELPER ---------------------------------------------------- */

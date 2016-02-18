@@ -1,0 +1,7 @@
+.project
+.buildpath
+.settings
+.DS_Store
+node_modules/*
+web/assets/*
+.gulp/*

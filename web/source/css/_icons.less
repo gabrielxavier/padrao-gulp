@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "icons";
+	src: url('../font/icons.eot');
+	src: url('../font/icons.eot?#iefix') format('eot'),
+		url('../font/icons.woff') format('woff'),
+		url('../font/icons.ttf') format('truetype'),
+		url('../font/icons.svg#icons') format('svg');
+}
+
+.icon-base-pseudo {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@arrow-up: "\E001";
+
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
